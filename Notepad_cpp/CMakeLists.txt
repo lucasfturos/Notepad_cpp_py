@@ -31,24 +31,17 @@ set(PROJECT_SOURCES
     src/main.cpp
 )
 
-if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(Notepad_cpp
-        ${PROJECT_HEADER} ${PROJECT_SOURCES} ${TS_FILES}
+set(CMAKE_AUTOUIC_SEARCH_PATHS
+    ${PROJECT_SOURCE_DIR}/lib/ui
 )
 
-    qt_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
-else()
-    if(ANDROID)
-        add_library(Notepad_cpp SHARED
-            ${PROJECT_SOURCES}
-        )
-    else()
-        add_executable(Notepad_cpp
-            ${PROJECT_SOURCES}
-        )
-    endif()
+add_executable(Notepad_cpp
+    ${PROJECT_HEADER}
+    ${PROJECT_SOURCES}
+    ${TS_FILES}
+    ${UI_FILES}
+)
 
-    qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
-endif()
-
-target_link_libraries(Notepad_cpp PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(Notepad_cpp
+    PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
+)

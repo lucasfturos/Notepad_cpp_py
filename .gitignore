@@ -19,7 +19,7 @@
 **/*.qmlc
 **/*.jsc
 **/Makefile*
-**/*build-*
+build-Notepad_cpp-Desktop-Debug/
 **/*.qm
 **/*.prl
 
@@ -28,7 +28,7 @@
 
 # QtCreator
 **/*.autosave
-
+Notepad_cpp/CMakeLists.txt.user
 # QtCreator local machine specific files for imported projects
 *creator.user*
 
