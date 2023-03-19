@@ -4,4 +4,4 @@ run:
 download:
 	@sudo apt install python-tk
 remove:
-	rm -rf *.txt __pycache__
+	@rm -rf *.txt __pycache__
