@@ -1,18 +1,6 @@
 **/__pycache__/
 **/*.txt
 
-# C++ objects and libs
-/*.slo
-/*.lo
-/*.o
-/*.a
-/*.la
-/*.lai
-/*.so
-/*.so.*
-/*.dll
-/*.dylib
-
 # Qt-es
 **/object_script.*.Release
 **/object_script.*.Debug
@@ -40,9 +28,6 @@
 
 # QtCreator
 **/*.autosave
-
-# QtCreator CMake
-**/CMakeLists.txt.user*
 
 # QtCreator local machine specific files for imported projects
 *creator.user*
