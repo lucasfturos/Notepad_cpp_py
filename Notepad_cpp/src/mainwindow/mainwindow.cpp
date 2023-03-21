@@ -61,15 +61,15 @@ void MainWindow::on_actionSalvar_triggered() {
 
 void MainWindow::on_actionSair_triggered() { QApplication::quit(); }
 
-void MainWindow::on_actionCopiar_triggered() {}
+void MainWindow::on_actionCopiar_triggered() { ui->textEdit->copy(); }
 
-void MainWindow::on_actionColar_triggered() {}
+void MainWindow::on_actionColar_triggered() { ui->textEdit->paste(); }
 
-void MainWindow::on_actionRecortar_triggered() {}
+void MainWindow::on_actionRecortar_triggered() { ui->textEdit->cut(); }
 
-void MainWindow::on_actionDesfazer_triggered() {}
+void MainWindow::on_actionDesfazer_triggered() { ui->textEdit->undo(); }
 
-void MainWindow::on_actionRefazer_triggered() {}
+void MainWindow::on_actionRefazer_triggered() { ui->textEdit->redo(); }
 
 void MainWindow::on_actionSobre_o_aplicativo_triggered() {
     QMessageBox message_about;
