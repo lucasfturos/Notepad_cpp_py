@@ -72,9 +72,6 @@ class Notepad:
 
         # Sobre o programa e creditos
         self.__this_about_menu.add_command(
-            label="Creditos", command=self.__creditsAbout
-        )
-        self.__this_about_menu.add_command(
             label="Sobre", command=self.__applicationAbout
         )
         # Adiciona as configs do sobre no menu bar
@@ -91,13 +88,6 @@ class Notepad:
     def __quitNotepad(self) -> None:
         """Função para sair do programa"""
         self.__root.destroy()
-
-    def __creditsAbout(self) -> None:
-        """Função dos creditos"""
-        showinfo(
-            title="Creditos",
-            message="Onde aprendi:\n\nInstagram:\n\nhttps://www.instagram.com/pythonadvisor/",
-        )
 
     def __applicationAbout(self) -> None:
         """Função do sobre o programa"""

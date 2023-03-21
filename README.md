@@ -7,6 +7,6 @@ Notepad feito para aprender sobre GUI em C++ e Python utilizando o Qt5 e Tkinter
   - Locais onde aprendi:
 
 
-    [pythonadvisor](https://www.instagram.com/p/Cp9mAiWDGXg/)
+    [geeksforgeeks](https://www.geeksforgeeks.org/make-notepad-using-tkinter/)
 
 
