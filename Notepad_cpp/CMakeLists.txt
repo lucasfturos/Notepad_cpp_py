@@ -11,15 +11,31 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets LinguistTools REQUIRED)
-find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets LinguistTools REQUIRED)
+find_package(
+    QT
+    NAMES
+    Qt6
+    Qt5
+    COMPONENTS
+    Widgets
+    LinguistTools
+    Core
+    REQUIRED
+)
+find_package(Qt${QT_VERSION_MAJOR}
+    COMPONENTS
+    Widgets
+    LinguistTools
+    Core
+    REQUIRED
+)
 
 set(TS_FILES
     lib/ts/Notepad_cpp_pt_BR.ts
 )
 
 set(UI_FILES
-    lib/ui/mainwindow.ui
+    src/mainwindow/mainwindow.ui
 )
 
 set(PROJECT_HEADERS
